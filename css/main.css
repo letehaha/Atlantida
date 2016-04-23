@@ -26,9 +26,32 @@
 .blog_light {
   background-color: #555557; }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
 body {
   min-width: 320px;
-  font-family: 'Montserrat', 'Arial', sans-serif; }
+  font-family: "Montserrat", "Arial", sans-serif; }
+
+.s_intro {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 70px 0; }
+  .s_intro h2 {
+    padding-bottom: 25px;
+    font-family: "Amsdam", "Arial", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center; }
+  .s_intro p {
+    font-family: "Crimson Text", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center; }
 
 .fixed_panel {
   position: fixed;
@@ -69,7 +92,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #757575;
-    font-family: 'Montserrat', 'Arial', sans-serif; }
+    font-family: "Montserrat", "Arial", sans-serif; }
 
 .top_menu {
   display: inline-block;
@@ -82,7 +105,7 @@ body {
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 700;
-      font-family: 'Montserrat', 'Arial', sans-serif; }
+      font-family: "Montserrat", "Arial", sans-serif; }
     .top_menu li:last-child {
       padding-right: 0; }
 
@@ -96,7 +119,7 @@ body {
       padding-left: 6px; }
 
 .main_header {
-  background-image: url("../img/bg-header.png");
+  background-image: url("../img/bg/bg-header.png");
   background-size: cover;
   min-height: 600px;
   max-height: 1000px;
@@ -116,7 +139,7 @@ body {
   text-align: center; }
   .main_header h2 {
     font-size: 14px;
-    font-family: 'Crimson Text', 'Arial', sans-serif;
+    font-family: "Crimson Text", "Arial", sans-serif;
     color: #fff;
     letter-spacing: 1px; }
   .main_header h1 {
@@ -125,7 +148,7 @@ body {
     font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-family: 'Amsdam', 'Arial', sans-serif;
+    font-family: "Amsdam", "Arial", sans-serif;
     font-weight: 400;
     color: #fff;
     padding: 30px 0;
@@ -137,8 +160,16 @@ body {
     border: 2px solid #fff;
     color: #fff;
     background: none;
-    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     letter-spacing: 1px; }
+    .main_header a img {
+      margin-top: 7px;
+      margin-left: -5px;
+      position: absolute;
+      -webkit-transition: .3s ease-out;
+              transition: .3s ease-out; }
+    .main_header a:hover img {
+      margin-top: 20px; }
 
 .wrapper_about_text {
   padding: 75px 0 35px; }
@@ -152,11 +183,11 @@ body {
     text-align: center; }
     .wrapper_about_text .about_intro h2 {
       padding-bottom: 25px;
-      font-family: 'Amsdam', 'Arial', sans-serif;
+      font-family: "Amsdam", "Arial", sans-serif;
       font-size: 20px;
       text-transform: uppercase; }
     .wrapper_about_text .about_intro p {
-      font-family: 'Crimson Text', 'Arial', sans-serif;
+      font-family: "Crimson Text", "Arial", sans-serif;
       font-size: 14px;
       line-height: 25px;
       letter-spacing: 2px;
@@ -168,9 +199,9 @@ body {
       border: 2px solid #3e3d3d;
       color: #3e3d3d;
       background-color: #fff;
-      font-family: 'Montserrat', 'Arial', sans-serif;
-      -webkit-transition: .3s all;
-              transition: .3s all; }
+      font-family: "Montserrat", "Arial", sans-serif;
+      -webkit-transition: .3s ease-out;
+              transition: .3s ease-out; }
       .wrapper_about_text .about_intro a:hover {
         background-color: #3e3d3d;
         color: #fff; }
@@ -191,7 +222,7 @@ body {
       margin: 25px 0;
       font-size: 13px;
       line-height: 18px;
-      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-family: "Montserrat", "Arial", sans-serif;
       text-transform: uppercase;
       color: #3e3d3d; }
     .wrapper_about_elem .about_elem span {
@@ -199,26 +230,10 @@ body {
       color: #3e3d3d; }
 
 .services {
-  background-image: url("../img/bg-services.png");
+  background-image: url("../img/bg/bg-services.png");
   background-size: cover;
-  padding: 70px 0 85px;
+  padding: 0 0 85px;
   color: #cfcfcf; }
-
-.serv_intro_wrapper {
-  width: 990px;
-  margin: 0 auto; }
-  .serv_intro_wrapper h2 {
-    padding-bottom: 25px;
-    font-family: 'Amsdam', 'Arial', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center; }
-  .serv_intro_wrapper p {
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    text-align: center; }
 
 .serv_wrapper {
   display: -webkit-box;
@@ -230,7 +245,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .serv_wrapper .serv-item {
-    margin-top: 75px;
     width: 24%;
     border: 2px solid #fff; }
     .serv_wrapper .serv-item h4 {
@@ -238,37 +252,35 @@ body {
       text-align: center;
       text-transform: uppercase;
       font-size: 13px;
-      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-family: "Montserrat", "Arial", sans-serif;
       letter-spacing: 2px;
       line-height: 18px; }
     .serv_wrapper .serv-item p {
-      font-family: 'Crimson Text', 'Arial', sans-serif;
+      font-family: "Crimson Text", "Arial", sans-serif;
       font-size: 14px;
       padding: 0 35px 45px;
       text-align: center;
       letter-spacing: 1px;
       line-height: 25px; }
 
-.team {
-  background-image: url("../img/bg-team.png");
-  background-size: cover; }
+.timeline {
+  position: relative;
+  width: 100%;
+  background-color: inherit;
+  padding-top: 50px; }
+  .timeline:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #3e3d3d;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin-left: -2px; }
 
-.team_intro_wrapper {
-  max-width: 990px;
-  margin: 0 auto;
-  padding: 70px 0; }
-  .team_intro_wrapper h2 {
-    padding-bottom: 25px;
-    font-family: 'Amsdam', 'Arial', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center; }
-  .team_intro_wrapper p {
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    text-align: center; }
+.team {
+  background-image: url("../img/bg/bg-team.png");
+  background-size: cover; }
 
 .team_wrapper {
   max-width: 875px;
@@ -315,7 +327,7 @@ body {
           font-size: 13px;
           line-height: 18px;
           color: #3e3d3d;
-          font-family: 'Montserrat', 'Arial', sans-serif;
+          font-family: "Montserrat", "Arial", sans-serif;
           letter-spacing: 1px; }
         .team_wrapper .team_elem .team_elem_wrapper .team_elem_intro hr {
           height: 2px;
@@ -333,27 +345,81 @@ body {
             content: '|';
             padding-left: 6px; }
 
-.prices {
-  padding: 70px 0 90px; }
-
-.price_intro_wrapper {
-  width: 990px;
-  margin: 0 auto; }
-  .price_intro_wrapper h2 {
-    padding-bottom: 25px;
-    font-family: 'Amsdam', 'Arial', sans-serif;
-    font-size: 20px;
+.portolio_sel {
+  padding-top: 55px;
+  text-align: center; }
+  .portolio_sel li {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #424141;
     text-transform: uppercase;
-    text-align: center; }
-  .price_intro_wrapper p {
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    text-align: center; }
+    font-size: 11px;
+    line-height: 20px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    border: 2px solid #424141;
+    -webkit-transition: .3s ease-out;
+            transition: .3s ease-out;
+    cursor: pointer; }
+    .portolio_sel li:hover {
+      background-color: #424141;
+      color: #fff; }
+    .portolio_sel li.active {
+      background-color: #424141;
+      color: #fff; }
+
+.wrapper_portfolio_elem {
+  max-height: 750px;
+  min-height: 600px;
+  height: 70vw;
+  max-width: 1600px;
+  min-width: 1100px;
+  width: 100%;
+  margin: 0 auto; }
+  .wrapper_portfolio_elem .portfolio_elem_clmn {
+    height: 100%;
+    width: 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: inline-block; }
+    .wrapper_portfolio_elem .portfolio_elem_clmn:not(:first-child) {
+      margin-left: -6px; }
+    .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row {
+      position: relative;
+      height: 100%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row img {
+        width: 100%;
+        margin-bottom: -2px; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_1 {
+        height: 60%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_2 {
+        height: 40%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_3 {
+        height: 43%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_4 {
+        height: 57%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_5 {
+        height: 33%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_6 {
+        height: 67%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_7 {
+        height: 64%; }
+      .wrapper_portfolio_elem .portfolio_elem_clmn .portfolio_elem_row_8 {
+        height: 36%; }
+
+.mix {
+  display: none; }
+
+.prices {
+  padding: 0 0 90px; }
 
 .price_wrapper {
-  margin-top: 85px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -372,13 +438,13 @@ body {
       color: #3e3d3d;
       font-size: 13px;
       line-height: 18px;
-      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-family: "Montserrat", "Arial", sans-serif;
       padding-top: 45px; }
     .price_wrapper .price_item span {
       font-size: 70px;
       color: #3e3d3d;
       font-weight: 700;
-      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-family: "Montserrat", "Arial", sans-serif;
       margin-top: 50px;
       display: block; }
       .price_wrapper .price_item span sup {
@@ -399,9 +465,9 @@ body {
       border: 2px solid #3e3d3d;
       color: #3e3d3d;
       font-size: 13px;
-      font-family: 'Montserrat', 'Arial', sans-serif;
-      -webkit-transition: .3s all;
-              transition: .3s all; }
+      font-family: "Montserrat", "Arial", sans-serif;
+      -webkit-transition: .3s ease-out;
+              transition: .3s ease-out; }
       .price_wrapper .price_item a:hover {
         color: #fff;
         background-color: #3e3d3d; }
@@ -427,8 +493,8 @@ body {
     padding: 15px 30px;
     border: 2px solid #fff;
     color: #fff;
-    -webkit-transition: .3s all;
-            transition: .3s all; }
+    -webkit-transition: .3s ease-out;
+            transition: .3s ease-out; }
     .look_wrapper a:hover {
       background-color: #fff;
       color: #2d2d2f; }
@@ -441,7 +507,7 @@ body {
     line-height: 18px;
     color: #d8d8d8;
     letter-spacing: 2px;
-    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     margin-bottom: 25px; }
   .look_intro p {
     font-style: italic;
@@ -449,29 +515,9 @@ body {
     line-height: 20px;
     color: #888888; }
 
-.blog {
-  padding: 70px 0 0; }
-
-.blog_intro_wrapper {
-  width: 990px;
-  margin: 0 auto; }
-  .blog_intro_wrapper h2 {
-    padding-bottom: 25px;
-    font-family: 'Amsdam', 'Arial', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center; }
-  .blog_intro_wrapper p {
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    text-align: center; }
-
 .blog_items_wrapper {
   max-width: 1600px;
   min-width: 1200px;
-  padding-top: 80px;
   margin: 0 auto; }
   .blog_items_wrapper .blog_item {
     width: 50%;
@@ -495,37 +541,18 @@ body {
         color: #e3e3e3;
         padding-bottom: 40px;
         letter-spacing: 1px;
-        font-family: 'Montserrat', 'Arial', sans-serif; }
+        font-family: "Montserrat", "Arial", sans-serif; }
       .blog_items_wrapper .blog_item .blog_intro p {
         font-size: 14px;
         color: #949494;
         line-height: 20px;
-        font-family: 'Crimson Text', 'Arial', sans-serif; }
+        font-family: "Crimson Text", "Arial", sans-serif; }
       .blog_items_wrapper .blog_item .blog_intro hr {
         width: 50%;
         margin: 15px 0;
         height: 2px;
         border: none;
         background-color: #454545; }
-
-.clients {
-  padding: 80px 0; }
-
-.clients_intro_wrapper {
-  width: 990px;
-  margin: 0 auto; }
-  .clients_intro_wrapper h2 {
-    padding-bottom: 25px;
-    font-family: 'Amsdam', 'Arial', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center; }
-  .clients_intro_wrapper p {
-    font-family: 'Crimson Text', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 1px;
-    text-align: center; }
 
 .clients_items_wrapper {
   display: -webkit-box;
@@ -536,18 +563,18 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 80px 40px; }
+  padding: 0 40px 80px; }
   .clients_items_wrapper .clients_item {
     display: inline; }
 
 .map {
   height: 500px;
-  background-image: url("../img/Map.png");
+  background-image: url("../img/bg/Map.png");
   background-size: cover; }
 
 .footer {
   padding: 50px 0;
-  background-image: url("../img/bg-footer.png");
+  background-image: url("../img/bg/bg-footer.png");
   background-size: cover; }
   .footer hr {
     margin: 50px 0 40px;
@@ -575,7 +602,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #757575;
-    font-family: 'Montserrat', 'Arial', sans-serif; }
+    font-family: "Montserrat", "Arial", sans-serif; }
 
 .ft_main {
   display: -webkit-box;
@@ -593,11 +620,11 @@ body {
       font-size: 14px;
       line-height: 20px;
       color: #949494;
-      font-family: 'Crimson Text', 'Arial', sans-serif;
+      font-family: "Crimson Text", "Arial", sans-serif;
       letter-spacing: 1px; }
     .ft_main .ft_intro_wrapper .emal {
       font-size: 13px;
-      font-family: 'Montserrat', 'Arial', sans-serif;
+      font-family: "Montserrat", "Arial", sans-serif;
       text-transform: uppercase;
       line-height: 18px;
       letter-spacing: 1px;
@@ -610,7 +637,7 @@ body {
       letter-spacing: 1px;
       color: #e3e3e3;
       padding: 45px 0 35px;
-      font-family: 'Montserrat', 'Arial', sans-serif; }
+      font-family: "Montserrat", "Arial", sans-serif; }
   .ft_main .ft_social {
     font-size: 14px; }
     .ft_main .ft_social a {
