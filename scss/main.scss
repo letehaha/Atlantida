@@ -16,14 +16,6 @@ body{
 		text-transform: uppercase;
 		text-align: center;
 		position: relative;
-		// &:after{
-		// 	border-image: url('../img/wave.png') 3 0 repeat;
-		// 	content: '';
-		// 	position: absolute;
-		// 	top: 40px;
-		// 	width: 140px;
-		// 	margin-left: -130px;
-		// }
 	}
 	p{
 		font-family: $crimsonText;
@@ -110,7 +102,6 @@ body{
 	}
 	h1{
 		display: inline-block;
-		text-decoration: wavy;
 		font-size: 2.5em;
 		text-transform: uppercase;
 		letter-spacing: .1em;
@@ -118,7 +109,6 @@ body{
 		font-weight: 400;
 		color: #fff;
 		padding: 30px 0;
-		border-bottom: wavy 2px #fff;
 		position: relative; 
 		&:after{
 			border-image: url('../img/wave/white-wave.png') 3 0 repeat;
@@ -326,85 +316,159 @@ body{
 	}
 }
 
-.timeline{
+.timeline_wrapper{
 	position: relative;
 	width: 100%;
 	background-color: inherit;
 	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	&:before{
+		content: '';
+		position: absolute;
+		height: 75px;
+		width: 75px;
+		background: url('../img/icons/2015.png') no-repeat;
+		top: -50px;
+		left: 47%;
+	}
 	&:after{
 		content: '';
-	  position:absolute;
-	  width: 3px;
-	  background-color: $main_color;
-	  left: 50%;
-	  top: 0;
-	  bottom: 0;
-	  margin-left: -2px;
+		position: absolute;
+		width: 3px;
+		background-color: $main_color;
+		left: 50%;
+		height: 624px;
+		top: 20px;
+	}
+	.entry-left{
+		width: 47%;
+		float: left;
+		position: relative;
+		.entry{
+			margin-top: 15px;
+			margin-bottom: 30px;
+			&:last-child{
+				margin-top: 270px;
+			}
+		}
+	}
+	.entry-right{
+		width: 47%;
+		float: right;
+		position: relative;
+		.entry{
+			margin-top: 60px;
+			&:last-child{
+				margin-top: 180px;
+				margin-bottom: 190px;
+			}
+		}
+	}
+	.fdate:before{
+		content: '';
+		position: absolute;
+		width: 3px;
+		background-color: $main_color;
+		left: 106.4%;
+		height: 387px;
+		top: 55.9%;
+	}
+	.fdate:after{
+		content: '';
+		position: absolute;
+		height: 55px;
+		width: 55px;
+		background: url('../img/icons/history-start.png') no-repeat;
+		top: 88%;
+		left: 102%;
+	}
+	.entry{
+		box-sizing: border-box;
+		padding: 20px;
+		border: 3px solid $main_color;
+		background-color: rgba(240,240,240,1);
+		position: relative;
+		h3{
+			font-size: 13px;
+			text-transform: uppercase;
+			font-family: $mostserrat;
+			color: $main_color;
+			letter-spacing: 1px;
+			margin-bottom: 5px;
+			line-height: 18px;
+		}
+		h4{
+			font-size: 11px;
+			color: $main_color;
+			line-height: 18px;
+			margin-bottom: 15px;
+			font-family: $mostserrat;
+		}
+		p{
+			font-size: 14px;
+			line-height: 20px;
+			font-family: $crimsonText;;
+			color: $main_color;
+		}
+	}
+	.entry--left:after{
+		content: '';
+		border: 10px solid transparent;
+		border-width: 0 0 13px 13px;
+		border-color: transparent transparent transparent $main_color;
+		position: absolute;
+		top: 11%;
+		left: 100%;
+	}
+	.entry--left:before{
+		position: absolute;
+		content: '';
+		border: 13px solid $main_color;
+		border-radius: 50%;
+    top: 5%;
+    left: 105%;
+	}
+	.entry--right:after{
+		content: '';
+		border: 10px solid transparent;
+		border-width: 13px 0 0 13px;
+		border-color: transparent transparent transparent $main_color;
+		position: absolute;
+		top: 11%;
+		left: -2.2%;
+		transform: rotate(180deg);
+	}
+	.entry--right:before{
+		position: absolute;
+		content: '';
+		border: 13px solid $main_color;
+		border-radius: 50%;
+    top: 5%;
+    left: -8.7%;
+	}
+	// .entry-right:after{
+	// 	content: '';
+	// 	position: absolute;
+	// 	height: 75px;
+	// 	width: 75px;
+	// 	background: url('../img/icons/2014.png') no-repeat;
+	// 	top: -50px;
+	// 	left: 47%;
+	// }
+	.date:before{
+		content: '';
+		position: absolute;
+		height: 75px;
+		width: 75px;
+		background: url('../img/icons/2014.png') no-repeat;
+		top: 49.9%;
+		left: -12.5%;
 	}
 }
-// .timeline--first:after{
-// 	top: 20px;
-// }
-// .entry {
-//   padding: 10px 30px 40px 30px;
-//   width: 50%;
-//   position: relative;
-//   background-color: inherit;
-//   display: inline-block;
-// }
-// .entry--right {
-//   display: inline-block;
-//   float: right;
-//   margin-top: 50px;
-// }
 
-// .entry__content {
-//   padding: 20px 30px;
-//   background-color: white;
-//   border: 3px solid $main_color;
-//   position: relative;
-// }
-// .entry:before {
-//     content: " ";
-//     height: 0;
-//     position: absolute;
-//     top: 20px;
-//     width: 0;
-//     z-index: 1;
-// }
 
-// .entry--left:before {
-//   right: 22px;
-//   border: medium solid transparent;
-//   border-width: 0 0 8px 8px;
-//   border-color: transparent transparent transparent $main_color;
-// }
 
-// .entry--right:before {
-//    left: 23px;
-//    margin-left: 0;
-//    border: medium solid transparent;
-//    border-width: 0 8px 8px 0;
-//    border-color: transparent $main_color transparent transparent;
-// }
-
-// .entry:after {
-//   content: '';
-//   position: absolute;
-//   width: 16px;
-//   height: 16px;
-//   right: -8px;
-//   //background-color: inherit;
-//   background-color: $main_color;
-//   top: 12px;
-//   border-radius: 50%;
-//   z-index: 1;
-// }
-
-// .entry--right:after {
-//   right: auto;
-//   left: -8px;
-// }
 //////////////////////////////////////////////////////
 .team{
 	background-image: url('../img/bg/bg-team.png');
@@ -863,115 +927,6 @@ body{
 		padding-bottom: 45px;
 	}
 }
-
-
-// .slider {
-// 	$dots      : 4;
-// 	$dotSize   : 1;
-// 	$dotMargin : .5;
-	
-// 	$duration     : .3s;
-// 	$timingEase   : cubic-bezier(.51, .92, .24, 1);
-// 	$timingBounce : cubic-bezier(.51, .92, .24, 1.15);
-	
-// 	position: relative;
-// 	width: 100%;
-// 	height: 100%;
-// 	overflow: hidden;
-	
-// 	&__slides {
-// 		position: relative;
-// 		width: $dots * 100%;
-// 		height: 100%;
-// 		transition: transform $duration $timingEase;
-// 		will-change: transform;
-// 	}
-	
-// 	@for $i from 0 to $dots {
-			
-// 		$slide : 100% / $dots;
-// 		$left  : $slide * $i;
-
-// 		&[data-pos="#{ $i }"] &__slides {
-// 			transform: translateX(-$left);
-// 		}
-
-// 	}
-	
-// 	&__slide {
-// 		float: left;
-// 		width: 100% / $dots;
-// 		height: 100%;
-// 	}
-	
-// 	&__dots {
-// 		display: flex;
-// 		position: absolute;
-// 		bottom: 1.5em;
-// 		left: 50%;
-// 		transform: translateX(-50%);
-// 	}
-	
-// 	&__dot {
-// 		display: block;
-// 		margin: 0 #{ $dotMargin }em;
-// 		width: #{ $dotSize }em;
-// 		height: #{ $dotSize }em;
-// 		background: rgba(255, 255, 255, .5);
-// 		border-radius: 100px;
-// 	}
-	
-// 	&__indicator {
-// 		@extend .slider__dot;
-		
-// 		position: absolute;
-// 		background: white;
-// 		width: auto;
-		
-// 		&--left {
-// 			transition: left $duration $timingBounce, right $duration $duration/3 $timingBounce;
-// 		}
-		
-// 		&--right {
-// 			transition: left $duration $duration/3 $timingBounce, right $duration $timingBounce;
-// 		}
-// 	}
-	
-// 	@for $i from 0 to $dots {
-			
-// 		$dot   : $dotSize + $dotMargin * 2;
-// 		$left  : $dot * $i;
-// 		$right : $dot * ($dots - $i) - $dot;
-
-// 		&[data-pos="#{ $i }"] &__indicator {
-// 			left: #{ $left }em;
-// 			right: #{ $right }em;
-// 		}
-
-// 	}
-
-// }
-
-// // Custom colors and styling for the demo
-
-// .center {
-// 	display: flex;
-// 	height: 100vh;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background: #333;
-// }
-
-// .slider {
-// 	max-width: 600px;
-// 	max-height: 400px;
-// 	box-shadow: 0 0 20px rgba(0, 0, 0, .8);
-	
-// 	&__slide:nth-child(1) { background: #309954; }
-// 	&__slide:nth-child(2) { background: #FFBD3C; }
-// 	&__slide:nth-child(3) { background: #F8593E; }
-// 	&__slide:nth-child(4) { background: #4086FA; }
-// }
 
 //////////////////////////////////////////////////////////////
 .map{
