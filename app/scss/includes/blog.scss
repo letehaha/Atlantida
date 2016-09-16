@@ -1,0 +1,58 @@
+.blog{
+	h2{
+		&:after{
+			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 100px;
+			margin-left: -90px;
+		}
+	}
+}
+.blog_items_wrapper{
+	max-width: 1600px;
+	min-width: 1200px;
+	margin: 0 auto;
+	.blog_item{
+		width: 50%;
+		display: inline-block;
+		margin: -2px;
+		height: 100%;
+		position: relative;
+		img{
+			height: 100%;
+		}
+		.blog_intro{
+			padding: 50px 40px;
+			h5{
+				font-style: italic;
+				font-size: 12px;
+				line-height: 18px;
+				color: rgba(227, 227, 227, 1.0);
+			}
+			h4{
+				text-transform: uppercase;
+				font-size: 13px;
+				line-height: 18px;
+				color: rgba(227, 227, 227, 1.0);
+				padding-bottom: 40px;
+				letter-spacing: 1px;
+				font-family: $mostserrat;
+			}
+			p{
+				font-size: 14px;
+				color: rgba(148, 148, 148, 1.0);
+				line-height: 20px;
+				font-family: $crimsonText;
+			}
+			hr{
+				width: 50%;
+				margin: 15px 0;
+				height: 2px;
+				border: none;
+				background-color: rgba(69, 69, 69, 1.0);
+			}
+		}
+	}
+}

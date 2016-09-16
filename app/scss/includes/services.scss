@@ -1,0 +1,80 @@
+.services{
+	background-image: url('../img/bg/bg-services.jpg');
+	background-size: cover;
+	padding: 0 0 85px;
+	color: rgba(207, 207, 207, 1.0);
+	h2{
+		&:after{
+			border-image: url('../img/wave/white-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 140px;
+			margin-left: -130px;
+		}
+	}
+}
+.services-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.services-item_1:before{
+	background: url('../img/icons/serv-Idea.png') no-repeat;
+}
+.services-item_2:before{
+	background: url('../img/icons/serv-Monitor.png') no-repeat;
+}
+.services-item_3:before{
+	background: url('../img/icons/serv-Combo.png') no-repeat;
+}
+.services-item_4:before{
+	background: url('../img/icons/serv-WP.png') no-repeat;
+}
+.services-item{
+	width: 24%;
+	border-left: 2px solid #898989;
+	border-right: 2px solid #898989;
+	border-bottom: 2px solid #898989;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: -13px;
+		left: 46%;
+		height: 30px;
+		width: 30px;
+	}
+}
+.services-intro{
+	padding: 55px 0 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: $mostserrat;
+	letter-spacing: 2px;
+	line-height: 18px;
+	&:before{
+		content: '';
+		position: absolute;
+		border: 1px solid #898989;
+		width: 35%;
+		top:  0;
+		left: 0;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		border: 1px solid #898989;
+		width: 35%;
+		top:  0;
+		left: 65%;
+	}
+}
+.services-descr{
+	font-family: $crimsonText;
+	font-size: 14px;
+	padding: 0 35px 45px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 25px;
+}

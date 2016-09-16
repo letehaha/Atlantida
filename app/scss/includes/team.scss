@@ -1,0 +1,73 @@
+.team{
+	background-image: url('../img/bg/bg-team.jpg');
+	background-size: cover;
+	h2{
+		&:after{
+			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 151px;
+			margin-left: -142px;
+		}
+	}
+}
+.team-wrapper{
+	max-width: 875px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 70px;
+}
+.team-elem{
+	width: 31%;
+	position: relative;
+	&:hover .team-elem__wrapper{
+		opacity: 1;
+	}
+	.team-elem__wrapper{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		opacity: 0;
+		transition: .3s;
+	}
+}
+.team-elem__intro{
+	background-color: rgba(255,255,255,.7);
+	padding: 15px;
+	height: 100%;
+	width: 100%;
+	h5{
+		padding-top: 90%;
+		font-size: 13px;
+		line-height: 18px;
+		color: $main_color;
+		font-family: $mostserrat;
+		letter-spacing: 1px;
+	}
+	hr{
+		height: 2px;
+		background-color: $main_color;
+		border: none;
+	}
+	p{
+		font-family: 'Crimson Text Italic', 'Arial', sans-serif;
+		font-size: 14px;
+		line-height: 18px;
+		color: $main_color;
+	}
+	a{
+		display: inline-block;
+		color: rgba(66, 65, 65, 1.0);
+		&:not(:last-child):after{
+			content: '|';
+			padding-left: 6px;
+		}
+	}
+}

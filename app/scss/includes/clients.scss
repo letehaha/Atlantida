@@ -1,0 +1,20 @@
+.clients{
+	h2{
+		&:after{
+			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 125px;
+			margin-left: -115px;
+		}
+	}
+}
+.clients_items_wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px 80px;
+	.clients_item{
+		display: inline;
+	}
+}

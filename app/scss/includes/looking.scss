@@ -1,0 +1,39 @@
+.look_wrapper{
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	img{
+		display: inline-block;
+		width: 10%;
+	}
+	a{
+		display: inline-block;
+		padding: 15px 30px;
+		border: 2px solid #fff;
+		color: #fff;
+		transition: .3s ease-out;
+		&:hover{
+			background-color: #fff;
+			color: rgba(45, 45, 47, 1.0);
+		}
+	}
+}
+.look_intro{
+	display: inline-block;
+	width: 60%;
+	h4{
+		font-size: 16px;
+		line-height: 18px;
+		color: rgba(216, 216, 216, 1.0);
+		letter-spacing: 2px;
+		font-family: $mostserrat;
+		margin-bottom: 25px;
+	}
+	p{
+		font-style: italic;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgba(136, 136, 136, 1.0);
+	}
+}

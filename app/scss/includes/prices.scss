@@ -1,0 +1,121 @@
+.prices{
+	padding: 0 0 90px;
+	h2{
+		&:after{
+			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 115px;
+			margin-left: -102px;
+		}
+	}
+}
+.price_wrapper{
+	display: flex;
+	justify-content: space-between;
+	.price_item{
+		width: 32%;
+		background-color: #fff;
+		text-align: center;
+		h5{
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: $main_color;
+			font-size: 13px;
+			line-height: 18px;
+			font-family: $mostserrat;
+			padding-top: 45px;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				bottom: -75px;
+		    left: 44%;
+			}
+		}
+		.price_item_1:after{
+			background: url('../img/icons/price-icon.png') no-repeat;
+		}
+		.price_item_2:after{
+			background: url('../img/icons/price-icon-2.png') no-repeat;
+		}
+		.price_item_3:after{
+			background: url('../img/icons/price-icon-3.png') no-repeat;
+		}
+		.price_span_1:after{
+	    width: 25%;
+	    margin-left: -5%;
+		}
+		.price_span_1:before{
+	    width: 25%;
+    	margin-left: -19%;
+		}
+		.price_span_2:after{
+			width: 25%;
+    	margin-left: -7%;
+		}
+		.price_span_2:before{
+			width: 25%;
+    	margin-left: -17%;
+		}
+		.price_span_3:after{
+			width: 25%;
+   	 	margin-left: -7%;
+		}
+		.price_span_3:before{
+			width: 25%;
+     	margin-left: -17%;
+		}
+		span{
+			font-size: 70px;
+			color: $main_color;
+			font-weight: 700;
+			font-family: $mostserrat;
+			margin-top: 100px;
+			display: block;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				border: 1px $main_color solid;
+				top: -73%;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				border: 1px $main_color solid;
+				top: -73%;
+			}
+			sup{
+			 	vertical-align: baseline;
+			 	position: relative;
+			 	font-size: 30px;
+			 	top: -1.2em; 
+			}
+		}
+		p{
+			padding-top: 50px;
+			font-size: 16px;
+			line-height: 30px;
+			color: $main_color;
+			font-style: italic;
+		}
+		a{
+			margin: 50px 0 60px;
+			display: inline-block;
+			padding: 15px 30px;
+			border: 2px solid $main_color;
+			color: $main_color;
+			font-size: 13px;
+			font-family: $mostserrat;
+			transition: .3s ease-out;
+			&:hover{
+				color: #fff;
+				background-color: $main_color;
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+@import 'includes/reset.scss';
+@import 'variable.scss';
+
+body{
+	min-width: 320px;
+	font-family: $mostserrat;
+}
+.s_intro{
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 70px 0;
+	h2{
+		padding-bottom: 45px;
+		font-family: $amsdam;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+	}
+	p{
+		font-family: $crimsonText;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+}
+
+.map{
+	height: 500px;
+	background-image: url('../img/bg/bg-map.jpg');
+	background-size: cover;
+}
+
+@import 'includes/fixed_panel.scss';
+
+@import 'includes/header.scss';
+
+@import 'includes/about.scss';
+
+@import 'includes/services.scss';
+
+@import 'includes/history.scss';
+
+@import 'includes/team.scss';
+
+@import 'includes/portfolio.scss';
+
+@import 'includes/prices.scss';
+
+@import 'includes/looking.scss';
+
+@import 'includes/blog.scss';
+
+@import 'includes/clients.scss';
+
+@import 'includes/slider.scss';
+
+@import 'includes/footer.scss';

@@ -1,0 +1,73 @@
+.wrapper-about-text{
+	padding: 75px 0 35px;
+	img{
+		width: 100%;
+		height: 325px;
+		background-size: cover;
+	}
+}
+.about__intro{
+	background-color: #fff;
+	padding: 60px 75px 25px;
+	text-align: center;
+	h2{
+		padding-bottom: 45px;
+		font-family: $amsdam;
+		font-size: 20px;
+		text-transform: uppercase;
+		position: relative;
+		&:after{
+			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			content: '';
+			position: absolute;
+			top: 40px;
+			width: 150px;
+			margin-left: -140px;
+		}
+	}
+	p{
+		font-family: $crimsonText;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 2px;
+		text-align: left;
+	}
+	a{
+		margin-top: 50px;
+		display: inline-block;
+		padding: 15px 30px;
+		border: 2px solid $main_color;
+		color: $main_color;
+		background-color: #fff;
+		font-family: $mostserrat;
+		transition: .3s ease-out;
+		&:hover{
+			background-color: $main_color;
+			color: #fff;
+		}
+	}
+}
+.wrapper-about__elems{
+	padding: 0 45px 65px;
+	display: flex;
+}
+.wrapper-about__elem{
+	width: 25%;
+	border-right: 1px solid #ccc;
+	text-align: center;
+	&:last-child{
+		border: none;
+	}
+	.about-descr{
+		margin: 25px 0;
+		font-size: 13px;
+		line-height: 18px;
+		font-family: $mostserrat;
+		text-transform: uppercase;
+		color: $main_color;
+	}
+	.about-num{
+		font-size: 45px;
+		color: $main_color;
+	}
+}
