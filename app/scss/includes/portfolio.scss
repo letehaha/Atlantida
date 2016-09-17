@@ -1,14 +1,10 @@
-.portfolio{
-	h2{
-		&:after{
-			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
-			content: '';
-			position: absolute;
-			top: 40px;
-			width: 170px;
-			margin-left: -160px;
-		}
-	}
+.portfolio h2:after{
+	border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+	content: '';
+	position: absolute;
+	top: 40px;
+	width: 170px;
+	margin-left: -160px;
 }
 
 .portolio_sel{
@@ -35,55 +31,22 @@
 		}
 	}
 }
-.wrapper_portfolio_elem{
-	height: 690px;
+.wrapper-portfolio-elem{
+	// height: 44vw;
 	max-width: 1600px;
-	min-width: 1100px;
 	width: 100%;
-	margin: 0 auto;
-	.portfolio_elem_clmn{
-		height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	.mix{
+		display: none;
+	}
+	.portfolio-elem{
 		width: 25%;
-		display: flex;
-		flex-direction: column;
-		display: inline-block;
-		&:not(:first-child){
-			margin-left: -6px;
-		}
-		.portfolio_elem_row{
-			position: relative;
+		height: 25vw;
+		img{
+			display: block;
+			width: 100%;
 			height: 100%;
-			img{
-				width: 100%;
-				margin-bottom: -2px;
-			}
-			&_1{
-				height: 60%;
-			}
-			&_2{
-				height: 40%;
-			}
-			&_3{
-				height: 43%;
-			}
-			&_4{
-				height: 57%;
-			}
-			&_5{
-				height: 33%;
-			}
-			&_6{
-				height: 67%;
-			}
-			&_7{
-				height: 64%;
-			}
-			&_8{
-				height: 36%;
-			}
 		}
 	}
-}
-.mix{
-	display: none;
 }

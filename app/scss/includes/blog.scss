@@ -14,17 +14,18 @@
 	max-width: 1600px;
 	min-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
 	.blog_item{
 		width: 50%;
-		display: inline-block;
-		margin: -2px;
 		height: 100%;
 		position: relative;
 		img{
 			height: 100%;
+			display: block;
 		}
 		.blog_intro{
-			padding: 50px 40px;
+			padding: 45px 40px;
 			h5{
 				font-style: italic;
 				font-size: 12px;

@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Atlantida</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <link rel="icon" type="image/png" href="img/icons/logo-icon.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="libs/slick/slick.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css" />
 </head>
@@ -246,30 +249,30 @@
         </div>
       </div>
     </div>
-    <div class="wrapper_portfolio_elem bg_dark" id="wrapper_portfolio_elem">
-      <div class="portfolio_elem_clmn">
-        <div class="portfolio_elem_row">
-          <img src="img/folio/pf_item-1.jpg" alt="Work" class="portfolio_elem_row_1 mix category-1">
-          <img src="img/folio/pf_item-2.jpg" alt="Work" class="portfolio_elem_row_2 mix category-2">
-        </div>
+    <div class="wrapper-portfolio-elem bg_dark" id="wrapper-portfolio-elem">
+      <div class="portfolio-elem portfolio-elem--1 mix category-1">
+        <img src="img/folio/pf_item-1-a.jpg" alt="Work" class="portfolio_elem_row_1">
       </div>
-      <div class="portfolio_elem_clmn">
-        <div class="portfolio_elem_row">
-          <img src="img/folio/pf_item-3.jpg" alt="Work" class="portfolio_elem_row_3 mix category-1">
-          <img src="img/folio/pf_item-4.jpg" alt="Work" class="portfolio_elem_row_4 mix category-3">
-        </div>
+      <div class="portfolio-elem portfolio-elem--2 mix category-2">
+        <img src="img/folio/pf_item-2.jpg" alt="Work" class="portfolio_elem_row_2">
       </div>
-      <div class="portfolio_elem_clmn">
-        <div class="portfolio_elem_row">
-          <img src="img/folio/pf_item-5.jpg" alt="Work" class="portfolio_elem_row_5 mix category-1">
-          <img src="img/folio/pf_item-6.jpg" alt="Work" class="portfolio_elem_row_6 mix category-1">
-        </div>
+      <div class="portfolio-elem portfolio-elem--3 mix category-1">
+        <img src="img/folio/pf_item-3.jpg" alt="Work" class="portfolio_elem_row_3">
       </div>
-      <div class="portfolio_elem_clmn">
-        <div class="portfolio_elem_row">
-          <img src="img/folio/pf_item-7.jpg" alt="Work" class="portfolio_elem_row_7 mix category-1">
-          <img src="img/folio/pf_item-8.jpg" alt="Work" class="portfolio_elem_row_8 mix category-1">
-        </div>
+      <div class="portfolio-elem portfolio-elem--4 mix category-3">
+        <img src="img/folio/pf_item-4.jpg" alt="Work" class="portfolio_elem_row_4">
+      </div>
+      <div class="portfolio-elem portfolio-elem--5 mix category-1">
+         <img src="img/folio/pf_item-5.jpg" alt="Work" class="portfolio_elem_row_5">
+      </div>
+      <div class="portfolio-elem portfolio-elem--6 mix category-1">
+        <img src="img/folio/pf_item-6.jpg" alt="Work" class="portfolio_elem_row_6">
+      </div>
+      <div class="portfolio-elem portfolio-elem--7 mix category-1">
+        <img src="img/folio/pf_item-7.jpg" alt="Work" class="portfolio_elem_row_7">
+      </div>
+      <div class="portfolio-elem portfolio-elem--8 mix category-1">
+        <img src="img/folio/pf_item-8.jpg" alt="Work" class="portfolio_elem_row_8">
       </div>
     </div>
   </section>
@@ -283,19 +286,22 @@
       <div class="price_wrapper">
         <div class="price_item">
           <h5 class="price_item_1">Basic</h5>
-          <span class="price_span_1"><sup>$</sup>10</span>
+          <span class="price-item--icon price-item--icon-one"></span>
+          <span class="price-item__cost"><sup>$</sup>10</span>
           <p>Full Access<br>Unlomited Edition<br>Full Backup<br>Free Tea and Free Mockup<br>Several Prices</p>
           <a href="#">Sign Up</a>
         </div>
         <div class="price_item">
           <h5 class="price_item_2">Advanced</h5>
-          <span class="price_span_2"><sup>$</sup>20</span>
+          <span class="price-item--icon price-item--icon-two"></span>
+          <span class="price-item__cost"><sup>$</sup>20</span>
           <p>Full Access<br>Unlomited Edition<br>Full Backup<br>Free Tea and Free Mockup<br>Several Prices</p>
           <a href="#">Sign Up</a>
         </div>
         <div class="price_item">
           <h5 class="price_item_3">Pro</h5>
-          <span class="price_span_3"><sup>$</sup>30</span>
+          <span class="price-item--icon price-item--icon-three"></span>
+          <span class="price-item__cost"><sup>$</sup>30</span>
           <p>Full Access<br>Unlomited Edition<br>Full Backup<br>Free Tea and Free Mockup<br>Several Prices</p>
           <a href="#">Sign Up</a>
         </div>
@@ -324,7 +330,7 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
     </div>
     <div class="blog_items_wrapper">
       <div class="blog_item blog_dark">
-        <img src="img/blog/blog-1.png" alt="blog" class="left">
+        <img src="img/blog/blog-1.jpg" alt="blog" class="left">
         <div class="blog_intro right">
           <h5>14 Aug 2015 / By Admin</h5>
           <hr>
@@ -333,7 +339,7 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
         </div>
       </div>
       <div class="blog_item blog_light">
-        <img src="img/blog/blog-3.png" alt="blog" class="left">
+        <img src="img/blog/blog-3.jpg" alt="blog" class="left">
         <div class="blog_intro right">
           <h5>14 Aug 2015 / By Admin</h5>
           <hr>
@@ -342,7 +348,7 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
         </div>
       </div>
       <div class="blog_item blog_light">
-        <img src="img/blog/blog-2.png" alt="blog" class="right">
+        <img src="img/blog/blog-2.jpg" alt="blog" class="right">
         <div class="blog_intro left">
           <h5>14 Aug 2015 / By Admin</h5>
           <hr>
@@ -351,7 +357,7 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
         </div>
       </div>
       <div class="blog_item blog_dark">
-        <img src="img/blog/blog-4.png" alt="blog" class="right">
+        <img src="img/blog/blog-4.jpg" alt="blog" class="right">
         <div class="blog_intro left">
           <h5>14 Aug 2015 / By Admin</h5>
           <hr>
@@ -380,15 +386,41 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
 
   <section class="testimonials" id="testimonials">
     <div class="container">
-      <div class="wrapper_testimonials">
-        <img src="img/clients/testimonials-client.png" alt="testimonials">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
-Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
-        <h5>Alexandr Podvalny</h5>
-        <h6>Free-PSD-Template.com Company</h6>
-        <div class="wrapper_slider">
-        </div>
-      </div>
+    	<div class="testimonials-slider">
+				<div class="testimonial">
+					<div class="testimonial__img">
+				  	<img src="img/clients/testimonials-client.png" alt="testimonials">
+					</div>
+				  <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+				Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
+				  <h5 class="testimonial__author">Alexandr Podvalny</h5>
+				  <h6 class="testimonial__prof">Free-PSD-Template.com Company</h6>
+				  <div class="wrapper_slider">
+				  </div>
+				</div>
+    		<div class="testimonial">
+    			<div class="testimonial__img">
+				  	<img src="img/clients/testimonials-client.png" alt="testimonials">
+					</div>
+				  <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+				Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
+				  <h5 class="testimonial__author">Alexandr Podvalny</h5>
+				  <h6 class="testimonial__prof">Free-PSD-Template.com Company</h6>
+				  <div class="wrapper_slider">
+				  </div>
+				</div>
+				<div class="testimonial">
+					<div class="testimonial__img">
+				  	<img src="img/clients/testimonials-client.png" alt="testimonials">
+					</div>
+				  <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed in dolor. 
+				Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
+				  <h5 class="testimonial__author">Alexandr Podvalny</h5>
+				  <h6 class="testimonial__prof">Free-PSD-Template.com Company</h6>
+				  <div class="wrapper_slider">
+				  </div>
+				</div>
+    	</div>
     </div>
   </section>
 
@@ -428,9 +460,10 @@ Etiam iaculis, nibh a lobortis egestas, est urna sodales</p>
     </div>
   </footer>
 
-  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/jquery/jquery.min.js"></script>
   <script src="libs/mixitup/mixitup.min.js"></script>
   <script src="libs/scroll2id/PageScroll2id.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

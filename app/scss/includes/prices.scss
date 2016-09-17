@@ -27,68 +27,41 @@
 			font-family: $mostserrat;
 			padding-top: 45px;
 			position: relative;
-			&:after{
-				content: '';
-				position: absolute;
-				height: 50px;
-				width: 50px;
-				bottom: -75px;
-		    left: 44%;
-			}
+
 		}
-		.price_item_1:after{
-			background: url('../img/icons/price-icon.png') no-repeat;
-		}
-		.price_item_2:after{
-			background: url('../img/icons/price-icon-2.png') no-repeat;
-		}
-		.price_item_3:after{
-			background: url('../img/icons/price-icon-3.png') no-repeat;
-		}
-		.price_span_1:after{
-	    width: 25%;
-	    margin-left: -5%;
-		}
-		.price_span_1:before{
-	    width: 25%;
-    	margin-left: -19%;
-		}
-		.price_span_2:after{
-			width: 25%;
-    	margin-left: -7%;
-		}
-		.price_span_2:before{
-			width: 25%;
-    	margin-left: -17%;
-		}
-		.price_span_3:after{
-			width: 25%;
-   	 	margin-left: -7%;
-		}
-		.price_span_3:before{
-			width: 25%;
-     	margin-left: -17%;
-		}
-		span{
-			font-size: 70px;
-			color: $main_color;
-			font-weight: 700;
-			font-family: $mostserrat;
-			margin-top: 100px;
+		.price-item--icon{
+			width: 50px;
+			height: 50px;
+			margin: 25px auto;
 			display: block;
 			position: relative;
-			&:after{
-				content: '';
-				position: absolute;
-				border: 1px $main_color solid;
-				top: -73%;
-			}
+			&:after,
 			&:before{
 				content: '';
 				position: absolute;
 				border: 1px $main_color solid;
-				top: -73%;
+				width: 95px;
+				top: 50%;
 			}
+			&:after{left: 50px;}
+			&:before{right: 50px;}
+		}
+		.price-item--icon-one{
+			background: url('../img/icons/price-icon.png') no-repeat;
+		}
+		.price-item--icon-two{
+			background: url('../img/icons/price-icon-2.png') no-repeat;
+		}
+		.price-item--icon-three{
+			background: url('../img/icons/price-icon-3.png') no-repeat;
+		}
+		.price-item__cost{
+			font-size: 70px;
+			color: $main_color;
+			font-weight: 700;
+			font-family: $mostserrat;
+			display: block;
+			position: relative;
 			sup{
 			 	vertical-align: baseline;
 			 	position: relative;

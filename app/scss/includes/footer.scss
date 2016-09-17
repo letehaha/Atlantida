@@ -90,6 +90,8 @@
 		}
 		input::-webkit-input-placeholder { color: rgba(70, 70, 70, 1.0); }
 		input::-moz-placeholder { color: rgba(70, 70, 70, 1.0); }
+		textarea::-webkit-input-placeholder { color: rgba(70, 70, 70, 1.0); }
+		textarea::-moz-placeholder { color: rgba(70, 70, 70, 1.0); }
 		textarea{
 			display: block;
 			padding: 20px;
