@@ -1,0 +1,80 @@
+@media only screen and (max-width : 1200px) {
+	.fixed-panel__logo,
+	.fixed-panel__menu{margin-right: 0;}
+	.container{padding: 0 15px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.services-wrapper{flex-wrap: wrap;}
+	.services-item{width: 49%;margin-bottom: 25px;}
+	.team-elem .team-elem__wrapper{opacity: 1;}
+}
+@media only screen and (max-width : 840px) {
+	.fixed-panel{padding: 0 15px;}
+	.fixed-panel__top-panel{flex-wrap: wrap;}
+	.fixed-panel__menu{
+		margin-top: 15px;
+		order: 1;
+		width: 100%;
+		text-align: center;
+	}
+	.price_wrapper .price_item .price-item--icon:before,
+	.price_wrapper .price_item .price-item--icon:after{width: 50px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.wrapper-about-text img{height: 200px;}
+	.about__intro{padding: 40px 25px 25px;}
+	.wrapper-about__elems{padding: 0 0 35px;}
+	.about__intro p{text-align: justify;}
+}
+
+@media only screen and (min-width : 641px) {
+	.fixed-panel__menu{display: block !important;}
+}
+@media only screen and (max-width : 640px) {
+	.fixed-panel__toggle-menu{display: block;}
+	.fixed-panel__menu{display: none;}
+	.main-header h1{font-size: 2em;}
+	.fixed-panel__menu li{padding: 5px;}
+	.wrapper-about__elems{flex-wrap: wrap;}
+	.wrapper-about__elem{width: 50%; margin-top: 25px; border-right: none;}
+	.media-visible,
+	.price_wrapper .price_item .price-item--icon{display: none;}
+	.team-elem__intro h5{padding-top: 40%;}
+	.price_wrapper .price_item p{padding: 0;}
+	.price-item__cost{padding: 10px 0;}
+	.price_wrapper .price_item a{margin: 15px 0;}
+}
+@media only screen and (max-width : 570px) {
+	.services-item{width: 90%; margin: 0 auto 25px;}
+	.wrapper-portfolio-elem .portfolio-elem{width: 50%;height: 50vw;}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-header h1{font-size: 1.7em; padding: 0;}
+	.main-header h1:after,
+	.main-header h1:before{display: none;}
+	.team-wrapper,.price_wrapper{flex-wrap: wrap;}
+	.team-elem,.price_wrapper .price_item{width: 80%;margin: 0 auto 25px;}
+}
+@media only screen and (max-width : 420px) {
+	.wrapper-about__elem{
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 15px;
+	}
+	.portolio_sel li{padding: 5px 10px;}
+	.price_wrapper .price_item{width: 90%;margin: 0 auto 25px;}
+}
+@media only screen and (max-width : 350px) {
+	.about__intro p{padding-bottom: 25px;}
+	.about__intro a{margin-top: 10px;}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.price_wrapper .price_item{width: 100%;margin: 0 auto 25px;}
+}

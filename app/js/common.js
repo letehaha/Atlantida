@@ -12,4 +12,10 @@ $(function(){
   	 arrows: false,
   	 infinite: true
 	});
+
+	$('.fixed-panel__toggle-menu').click(function() {
+		$('.burger').toggleClass('active');
+		$('.fixed-panel__menu').slideToggle(400);
+	});
+
 });

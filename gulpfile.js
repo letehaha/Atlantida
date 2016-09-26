@@ -72,6 +72,14 @@ gulp.task('build', ["clean", "sass-main"], function() {
 	.pipe(imagemin())
 	.pipe(gulp.dest('dist/img'))
 
+	var buildImage = gulp.src('app/libs/**/*') // Dest img in production
+	.pipe(imagemin())
+	.pipe(gulp.dest('dist/libs'))
+
+	var buildImage = gulp.src('app/blog/**/*') // Dest img in production
+	.pipe(imagemin())
+	.pipe(gulp.dest('dist/blog'))
+
 	var buildJs = gulp.src('app/js/**/*') // Dest js in production
 	.pipe(gulp.dest('dist/js'))
 

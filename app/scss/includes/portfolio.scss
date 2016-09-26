@@ -1,9 +1,11 @@
 .portfolio h2:after{
 	border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+	border-width: 3px;
+	border-style: solid;
 	content: '';
 	position: absolute;
 	top: 40px;
-	width: 170px;
+	width: 190px;
 	margin-left: -160px;
 }
 

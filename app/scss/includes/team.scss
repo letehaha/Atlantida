@@ -4,10 +4,12 @@
 	h2{
 		&:after{
 			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			border-width: 3px;
+			border-style: solid;
 			content: '';
 			position: absolute;
 			top: 40px;
-			width: 151px;
+			width: 165px;
 			margin-left: -142px;
 		}
 	}
@@ -22,6 +24,7 @@
 .team-elem{
 	width: 31%;
 	position: relative;
+	img{display: block;width: 100%;}
 	&:hover .team-elem__wrapper{
 		opacity: 1;
 	}

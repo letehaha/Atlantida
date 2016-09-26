@@ -18,10 +18,12 @@
 		position: relative;
 		&:after{
 			border-image: url('../img/wave/dark-wave.png') 3 0 repeat;
+			border-width: 3px;
+			border-style: solid;
 			content: '';
 			position: absolute;
 			top: 40px;
-			width: 150px;
+			width: 160px;
 			margin-left: -140px;
 		}
 	}
